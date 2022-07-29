@@ -55,6 +55,12 @@
                             <constraint firstItem="XVY-Rr-nib" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XoY-GD-jUk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenView" destination="X7E-hM-aD3" id="ppT-fF-n23"/>
+                        <outlet property="redView" destination="ksJ-c4-dBk" id="o6j-EH-FNA"/>
+                        <outlet property="strartButton" destination="XVY-Rr-nib" id="Vbx-zE-rRV"/>
+                        <outlet property="yellowView" destination="W2s-W8-mcT" id="Re3-xX-vaq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
