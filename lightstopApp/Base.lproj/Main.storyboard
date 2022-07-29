@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lightstopApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="lcm-kO-Lkf">
-                                <rect key="frame" x="133.66666666666666" y="104" width="108" height="398"/>
+                                <rect key="frame" x="141" y="104" width="108" height="398"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksJ-c4-dBk" userLabel="redView">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
@@ -42,16 +42,16 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-Rr-nib">
-                                <rect key="frame" x="159.66666666666666" y="524" width="55.666666666666657" height="31"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Start" titleAlignment="center"/>
+                                <rect key="frame" x="167.33333333333334" y="752" width="55.666666666666657" height="31"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start" titleAlignment="center"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="lcm-kO-Lkf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6nf-fL-YHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XVY-Rr-nib" secondAttribute="bottom" constant="27" id="8O1-VN-Qmb"/>
                             <constraint firstItem="lcm-kO-Lkf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="CNM-Go-BDB"/>
-                            <constraint firstItem="XVY-Rr-nib" firstAttribute="top" secondItem="lcm-kO-Lkf" secondAttribute="bottom" constant="22" id="GRA-yP-BHN"/>
                             <constraint firstItem="XVY-Rr-nib" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XoY-GD-jUk"/>
                         </constraints>
                     </view>
@@ -62,8 +62,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
