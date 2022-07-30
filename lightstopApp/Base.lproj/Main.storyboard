@@ -44,6 +44,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-Rr-nib">
                                 <rect key="frame" x="167.33333333333334" y="752" width="55.666666666666657" height="31"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="stratButtonPressing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ta2-q1-lCg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
