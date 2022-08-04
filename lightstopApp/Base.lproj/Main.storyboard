@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,37 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lightstopApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lcm-kO-Lkf">
-                                <rect key="frame" x="133.5" y="60" width="108" height="404"/>
+                                <rect key="frame" x="147.33333333333334" y="60.000000000000028" width="119.33333333333334" height="437.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksJ-c4-dBk" userLabel="redView">
-                                        <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="119.33333333333333"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ksJ-c4-dBk" secondAttribute="height" multiplier="1:1" id="Jet-r5-sLV"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2s-W8-mcT" userLabel="yellowView">
-                                        <rect key="frame" x="0.0" y="148" width="108" height="108"/>
+                                        <rect key="frame" x="0.0" y="159.33333333333334" width="119.33333333333333" height="119.00000000000003"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="W2s-W8-mcT" secondAttribute="height" multiplier="1:1" id="6yD-yZ-iM1"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7E-hM-aD3" userLabel="greenView">
-                                        <rect key="frame" x="0.0" y="296" width="108" height="108"/>
+                                        <rect key="frame" x="0.0" y="318.33333333333331" width="119.33333333333333" height="119.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="X7E-hM-aD3" secondAttribute="height" multiplier="1:1" id="wam-5C-jcm"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="404" id="HDI-w0-THy"/>
-                                    <constraint firstAttribute="width" constant="108" id="nqG-H5-n8p"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-Rr-nib">
-                                <rect key="frame" x="112.5" y="606" width="150" height="31"/>
+                                <rect key="frame" x="132" y="675" width="150" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="sGa-A8-ihn"/>
                                 </constraints>
@@ -51,6 +56,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
+                            <constraint firstItem="lcm-kO-Lkf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.288" id="4Hz-5t-Eof"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XVY-Rr-nib" secondAttribute="bottom" constant="30" id="8O1-VN-Qmb"/>
                             <constraint firstItem="lcm-kO-Lkf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F7y-jg-TWU"/>
                             <constraint firstItem="XVY-Rr-nib" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="alJ-nZ-45W"/>

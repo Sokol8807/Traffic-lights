@@ -37,16 +37,13 @@ class ViewController: UIViewController {
         switch currentLight {
         case .red:
             redView.alpha = lightON
-            yellowView.alpha = lightOff
             greenView.alpha = lightOff
             currentLight = CurrentLights.yellow
         case .yellow:
             redView.alpha = lightOff
             yellowView.alpha = lightON
-            greenView.alpha = lightOff
             currentLight = CurrentLights.green
         case .green:
-            redView.alpha = lightOff
             yellowView.alpha = lightOff
             greenView.alpha = lightON
             currentLight = CurrentLights.red
@@ -55,11 +52,11 @@ class ViewController: UIViewController {
     
     func setupButtons() {
         strartButton.setTitle("Start", for: .normal)
-        redView.layer.cornerRadius = 54
+        redView.layer.cornerRadius = redView.frame.width / 2
         redView.alpha = lightOff
-        greenView.layer.cornerRadius = 54
+        greenView.layer.cornerRadius = greenView.frame.width / 2
         greenView.alpha = lightOff
-        yellowView.layer.cornerRadius = 54
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
         yellowView.alpha = lightOff
     }
 }
